@@ -12,12 +12,12 @@ import { ProgrammingComponent } from './categories/programming/programming.compo
 
 
 
-
 const routes: Routes = [
   { path: '', component: ResourceListComponent }, 
   { path: 'categories/:category', component: ResourceCategoryComponent },
   { path: 'resources/:id', component: ResourceDetailsComponent },
   { path: 'add-resource', component: AddResourceFormComponent },
+
 
   {path: 'about',component: AboutComponent},
   {path: 'home',component: HomeComponent},
@@ -26,6 +26,13 @@ const routes: Routes = [
 
 
   { path: 'about', component: AboutComponent },
+  
+
+
+  { path: 'about', component: AboutComponent },
+  
+  {path: 'about',component: AboutComponent},
+  {path: 'home',component: HomeComponent},
   
 
 

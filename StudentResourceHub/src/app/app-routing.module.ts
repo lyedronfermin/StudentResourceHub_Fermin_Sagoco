@@ -19,12 +19,18 @@ const routes: Routes = [
       { path: 'math', component: MathComponent },
       { path: '', redirectTo: 'programming', pathMatch: 'full' },
 
+
+
+ 
       { path: 'home', component: HomeComponent },
       { path: 'categories/:category', component: CategoriesComponent },
       { path: 'about', component: AboutComponent },
       { path: 'add-resource', component: AddResourceComponent },
 
- feature/navigation
+
+
+
+
     ],
   },
   { path: 'about', component: AboutComponent },

@@ -1,4 +1,22 @@
+<<<<<<< HEAD
 <app-header></app-header>
 <app-navigation-menu></app-navigation-menu>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
+=======
+<div class="container">
+  <h1>Resource Manager</h1>
+
+  <app-add-resource-form (resourceAdded)="addResource($event)"></app-add-resource-form>
+
+  <div *ngIf="showList" class="resource-sections">
+    <app-resource-list [resources]="resources" (viewDetails)="viewResourceDetails($event)"></app-resource-list>
+    <app-resource-category category="Tutorial" [resources]="resources" (viewDetails)="viewResourceDetails($event)"></app-resource-category>
+    <app-resource-category category="Article" [resources]="resources" (viewDetails)="viewResourceDetails($event)"></app-resource-category>
+  </div>
+
+  <div *ngIf="!showList && selectedResource" class="resource-details-container">
+    <app-resource-details [resource]="selectedResource" (backToList)="goBackToList()"></app-resource-details>
+  </div>
+</div>
+>>>>>>> a0392513b8e80eb23f3345495120474eb9d4efa7

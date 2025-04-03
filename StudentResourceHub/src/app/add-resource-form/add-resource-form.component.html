@@ -1,14 +1,27 @@
-<form (ngSubmit)="onSubmit()">
-    <input type="text" [(ngModel)]="title" name="title" placeholder="Title">
-    <textarea [(ngModel)]="description" name="description" placeholder="Description"></textarea>
-    <input type="text" [(ngModel)]="url" name="url" placeholder="URL">
-    <select [(ngModel)]="category" name="category">
+<form (ngSubmit)="addResource()">
+  <div>
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" [(ngModel)]="newResource.title" required>
+  </div>
+  <div>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" [(ngModel)]="newResource.description" required></textarea>
+  </div>
+  <div>
+    <label for="url">URL:</label>
+    <input type="url" id="url" name="url" [(ngModel)]="newResource.url" required>
+  </div>
+  <div>
+    <label for="category">Category:</label>
+    <select id="category" name="category" [(ngModel)]="newResource.category" required>
       <option value="">Select Category</option>
-      <option value="Angular">Angular</option>
-      <option value="Node.js">Node.js</option>
-      {/* Add more categories */}
+      <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
     </select>
-    <input type="text" [(ngModel)]="author" name="author" placeholder="Author">
-    <button type="submit">Submit</button>
-    <button type="button">Cancel</button>
-  </form>
+  </div>
+  <div>
+    <label for="author">Author:</label>
+    <input type="text" id="author" name="author" [(ngModel)]="newResource.author" required>
+  </div>
+  <button type="submit">Submit</button>
+  <button type="button" (click)="cancel()">Cancel</button>
+</form>

@@ -1,4 +1,14 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
+
+@Component({
+  selector: 'app-root', 
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'StudentResourceHub'; 
+=======
 import { Resource } from './resource.model';
 import { ResourceDetailsComponent } from './resource-details/resource-details.component'; // Import it here
 import { ResourceListComponent } from './resource-list/resource-list.component';
@@ -44,4 +54,5 @@ export class AppComponent {
   addResource(resource: Resource) {
     this.resources.push(resource);
   }
+>>>>>>> a0392513b8e80eb23f3345495120474eb9d4efa7
 }

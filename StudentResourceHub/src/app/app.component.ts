@@ -17,7 +17,6 @@ import { RouterModule } from '@angular/router';
     ResourceDetailsComponent,
     ResourceListComponent,
     ResourceCategoryComponent,
-    AddResourceFormComponent,
     FormsModule,
     CommonModule,
     HeaderComponent,

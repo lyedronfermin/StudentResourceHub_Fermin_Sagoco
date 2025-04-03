@@ -36,7 +36,7 @@ export class AppComponent {
   resources: Resource[] = [
     { title: 'Angular Basics', description: 'Learn the fundamentals of Angular.', category: 'Tutorial', url: 'https://angular.io', author: 'Google', publicationDate: new Date('2023-01-01') },
     { title: 'React Guide', description: 'A comprehensive guide to React.', category: 'Article', url: 'https://reactjs.org', author: 'Facebook', publicationDate: new Date('2023-02-15') },
-    // Add more sample resources
+    
   ];
   selectedResource: Resource | null = null;
   showList = true;
@@ -54,3 +54,4 @@ export class AppComponent {
   addResource(resource: Resource) {
     this.resources.push(resource);
   }
+

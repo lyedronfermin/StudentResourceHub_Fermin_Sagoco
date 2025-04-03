@@ -1,0 +1,28 @@
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .resource-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .resource-list,
+  .resource-category {
+    width: 48%; /* Adjust as needed */
+    margin-bottom: 20px;
+  }
+  
+  .resource-details-container {
+    margin-top: 20px;
+  }

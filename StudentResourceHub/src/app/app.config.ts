@@ -6,16 +6,18 @@ import { ResourceCategoryComponent } from './resource-category/resource-category
 import { AddResourceFormComponent } from './add-resource-form/add-resource-form.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
-// Import other components you want to route to
+import { ProgrammingComponent } from './categories/programming/programming.component';
+
 
 const routes: Routes = [
-  { path: '', component: ResourceListComponent }, // Example: Home page
+  { path: '', component: ResourceListComponent }, 
   { path: 'categories/:category', component: ResourceCategoryComponent },
   { path: 'resources/:id', component: ResourceDetailsComponent },
   { path: 'add-resource', component: AddResourceFormComponent },
   {path: 'about',component: AboutComponent},
-  {path: 'home',component: HomeComponent}
-  // Add other routes here, including for 'about' if you have an AboutComponent
+  {path: 'home',component: HomeComponent},
+  
+  
 ];
 
 export const appConfig: ApplicationConfig = {

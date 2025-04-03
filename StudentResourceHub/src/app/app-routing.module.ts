@@ -17,7 +17,7 @@ const routes: Routes = [
       { path: 'design', component: DesignComponent },
       { path: 'math', component: MathComponent },
       { path: '', redirectTo: 'programming', pathMatch: 'full' },
-      { path: '', component: HomeComponent },
+      { path: 'home', component: HomeComponent },
       { path: 'categories/:category', component: CategoriesComponent },
       { path: 'about', component: AboutComponent },
       { path: 'add-resource', component: AddResourceComponent },

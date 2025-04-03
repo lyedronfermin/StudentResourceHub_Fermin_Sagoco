@@ -50,4 +50,4 @@ export class AppComponent {
   addResource(resource: Resource) {
     this.resources.push(resource);
   }
-}
+

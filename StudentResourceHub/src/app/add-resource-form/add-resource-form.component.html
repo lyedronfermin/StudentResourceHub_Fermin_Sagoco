@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit()">
+    <input type="text" [(ngModel)]="title" name="title" placeholder="Title">
+    <textarea [(ngModel)]="description" name="description" placeholder="Description"></textarea>
+    <input type="text" [(ngModel)]="url" name="url" placeholder="URL">
+    <select [(ngModel)]="category" name="category">
+      <option value="">Select Category</option>
+      <option value="Angular">Angular</option>
+      <option value="Node.js">Node.js</option>
+      {/* Add more categories */}
+    </select>
+    <input type="text" [(ngModel)]="author" name="author" placeholder="Author">
+    <button type="submit">Submit</button>
+    <button type="button">Cancel</button>
+  </form>

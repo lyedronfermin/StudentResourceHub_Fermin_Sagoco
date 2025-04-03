@@ -1,11 +1,6 @@
-
-<app-header></app-header>
-
-  <router-outlet></router-outlet>
-
-<app-footer></app-footer>
-
 <div class="container">
+  <app-header></app-header>
+
   <h1>Resource Manager</h1>
 
   <app-add-resource-form (resourceAdded)="addResource($event)"></app-add-resource-form>
@@ -19,5 +14,7 @@
   <div *ngIf="!showList && selectedResource" class="resource-details-container">
     <app-resource-details [resource]="selectedResource" (backToList)="goBackToList()"></app-resource-details>
   </div>
-</div>
 
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>

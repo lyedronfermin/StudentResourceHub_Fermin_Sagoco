@@ -9,7 +9,6 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
-import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component'; // Import NavigationMenuComponent
 
 @Component({
   selector: 'app-root',
@@ -24,7 +23,7 @@ import { NavigationMenuComponent } from './navigation-menu/navigation-menu.compo
     HeaderComponent,
     FooterComponent,
     RouterModule,
-    NavigationMenuComponent // Add NavigationMenuComponent to imports
+
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
@@ -32,7 +31,7 @@ import { NavigationMenuComponent } from './navigation-menu/navigation-menu.compo
 export class AppComponent {
   title = 'resource-manager';
   resources: Resource[] = [
-    // ... your resources
+
   ];
   selectedResource: Resource | null = null;
   showList = true;

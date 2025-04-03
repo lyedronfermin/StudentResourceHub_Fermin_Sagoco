@@ -1,13 +1,14 @@
+/* header.component.css */
 .header {
-    background-color: #f0f0f0;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .title {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
+  background-color: #333; /* Or your desired background color */
+  color: rgb(53, 211, 87); /* Or your desired text color */
+  padding: 15px 20px; /* Adjust padding as needed */
+  display: flex; /* Enable Flexbox for the header */
+  justify-content: space-between; /* Pushes title to the left, navigation to the right */
+  align-items: center; /* Vertically aligns items in the center */
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}

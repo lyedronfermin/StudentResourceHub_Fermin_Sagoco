@@ -1,28 +1,32 @@
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    font-family: sans-serif;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-  }
-  
-  .resource-sections {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .resource-list,
-  .resource-category {
-    width: 48%; /* Adjust as needed */
-    margin-bottom: 20px;
-  }
-  
-  .resource-details-container {
-    margin-top: 20px;
-  }
+/* app.component.css */
+.app-container {
+  display: flex;
+  flex-direction: column; /* Arrange elements vertically */
+  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+}
+
+app-header {
+  /* Optional styling for the header */
+  width: 100%;
+  /* Add background color, padding, etc. */
+}
+
+app-navigation-menu {
+  /* Optional styling for the navigation menu */
+  width: 100%;
+  /* Add background color, padding, etc. */
+}
+
+.content {
+  flex-grow: 1; /* Allow the content area to take up remaining vertical space */
+  /* Optional styling for the main content area */
+  padding: 20px;
+}
+
+app-footer {
+  /* Optional styling for the footer */
+  width: 100%;
+  /* Add background color, padding, etc. */
+  text-align: center;
+  padding: 10px 0;
+}

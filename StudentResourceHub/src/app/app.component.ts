@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
 
 @Component({
   selector: 'app-root', 
@@ -8,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'StudentResourceHub'; 
-=======
 import { Resource } from './resource.model';
 import { ResourceDetailsComponent } from './resource-details/resource-details.component'; // Import it here
 import { ResourceListComponent } from './resource-list/resource-list.component';
@@ -36,7 +34,7 @@ export class AppComponent {
   resources: Resource[] = [
     { title: 'Angular Basics', description: 'Learn the fundamentals of Angular.', category: 'Tutorial', url: 'https://angular.io', author: 'Google', publicationDate: new Date('2023-01-01') },
     { title: 'React Guide', description: 'A comprehensive guide to React.', category: 'Article', url: 'https://reactjs.org', author: 'Facebook', publicationDate: new Date('2023-02-15') },
-    // Add more sample resources
+    
   ];
   selectedResource: Resource | null = null;
   showList = true;
@@ -54,5 +52,4 @@ export class AppComponent {
   addResource(resource: Resource) {
     this.resources.push(resource);
   }
->>>>>>> a0392513b8e80eb23f3345495120474eb9d4efa7
 }

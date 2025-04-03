@@ -10,14 +10,17 @@ import { AddResourceComponent } from './add-resource/add-resource.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  {
-    path: 'categories',
+  {path: 'categories',
     component: CategoriesComponent, 
     children: [
       { path: 'programming', component: ProgrammingComponent },
       { path: 'design', component: DesignComponent },
       { path: 'math', component: MathComponent },
-      { path: '', redirectTo: 'programming', pathMatch: 'full' }, 
+      { path: '', redirectTo: 'programming', pathMatch: 'full' },
+      { path: '', component: HomeComponent },
+      { path: 'categories/:category', component: CategoriesComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'add-resource', component: AddResourceComponent },
     ],
   },
   { path: 'about', component: AboutComponent },

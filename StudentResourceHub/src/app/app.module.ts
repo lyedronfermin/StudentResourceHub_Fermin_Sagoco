@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router'; // Import RouterModule
+import { RouterModule } from '@angular/router'; 
+import { CommonModule } from '@angular/common'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,19 +15,11 @@ import { DesignComponent } from './categories/design/design.component';
 import { MathComponent } from './categories/math/math.component';
 import { AboutComponent } from './about/about.component';
 import { AddResourceComponent } from './add-resource/add-resource.component';
-=======
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Import CommonModule
-import { AppComponent } from './app.component';
-import { ResourceListComponent } from './resource-list/resource-list.component';
-// ... other imports
->>>>>>> a0392513b8e80eb23f3345495120474eb9d4efa7
+import { ResourceListComponent } from './resource-list/resource-list.component'; // Assuming this is needed
 
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
     HeaderComponent,
     NavigationMenuComponent,
     FooterComponent,
@@ -38,20 +30,13 @@ import { ResourceListComponent } from './resource-list/resource-list.component';
     MathComponent,
     AboutComponent,
     AddResourceComponent,
+    ResourceListComponent, // Include ResourceListComponent in declarations
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
-    RouterModule,     
-=======
-    ResourceListComponent,
-    // ... other declarations
-  ],
-  imports: [
-    BrowserModule,
+    AppRoutingModule,
+    RouterModule,
     CommonModule, // Add CommonModule to imports
-    // ... other imports
->>>>>>> a0392513b8e80eb23f3345495120474eb9d4efa7
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,59 @@
+.resource-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .resource-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .resource-card h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .resource-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .category-tag {
+    background-color: #e0f7fa;
+    color: #007bff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    margin-right: 10px;
+  }
+  
+  .resource-card button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resource-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .resource-list {
+      grid-template-columns: 1fr;
+    }
+  }

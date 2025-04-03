@@ -6,6 +6,9 @@ import { ResourceCategoryComponent } from './resource-category/resource-category
 import { AddResourceFormComponent } from './add-resource-form/add-resource-form.component';
 import { AboutComponent } from './about/about.component';
 
+import { HomeComponent } from './home/home.component';
+import { ProgrammingComponent } from './categories/programming/programming.component';
+
 
 
 const routes: Routes = [
@@ -15,6 +18,9 @@ const routes: Routes = [
   { path: 'add-resource', component: AddResourceFormComponent },
 
   { path: 'about', component: AboutComponent },
+  
+  {path: 'about',component: AboutComponent},
+  {path: 'home',component: HomeComponent},
   
 
 ];

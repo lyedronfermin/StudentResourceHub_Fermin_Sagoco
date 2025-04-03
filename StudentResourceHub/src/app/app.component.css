@@ -1,32 +1,31 @@
-/* app.component.css */
+
 .app-container {
   display: flex;
-  flex-direction: column; /* Arrange elements vertically */
-  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
-}
+  flex-direction: column; 
+  min-height: 100vh;
 
 app-header {
-  /* Optional styling for the header */
+  
   width: 100%;
-  /* Add background color, padding, etc. */
+  
 }
 
 app-navigation-menu {
-  /* Optional styling for the navigation menu */
+  
   width: 100%;
-  /* Add background color, padding, etc. */
+ 
 }
 
 .content {
-  flex-grow: 1; /* Allow the content area to take up remaining vertical space */
-  /* Optional styling for the main content area */
+  flex-grow: 1; 
+
   padding: 20px;
 }
 
 app-footer {
-  /* Optional styling for the footer */
+  
   width: 100%;
-  /* Add background color, padding, etc. */
+ 
   text-align: center;
   padding: 10px 0;
 }

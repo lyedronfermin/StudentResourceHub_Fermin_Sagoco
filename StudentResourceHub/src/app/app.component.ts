@@ -19,7 +19,6 @@ import { CategoriesComponent } from './categories/categories.component';
     ResourceDetailsComponent,
     ResourceListComponent,
     ResourceCategoryComponent,
-    AddResourceFormComponent,
     FormsModule,
     CommonModule,
     HeaderComponent,

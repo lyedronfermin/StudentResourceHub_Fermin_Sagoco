@@ -1,0 +1,20 @@
+.footer {
+  background-color: #333;
+  color: #eee;
+  text-align: center;
+  padding: 20px; /* Reduce padding */
+  font-family: 'Arial', sans-serif;
+  font-size: .8em; /* Reduce font size */
+  border-top: 1px solid #555;
+ 
+  
+}
+
+.footer p {
+  margin: 3px 0; /* Reduce paragraph margin */
+}
+
+.footer:hover {
+  background-color: #444;
+  transition: background-color 0.3s ease;
+}

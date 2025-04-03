@@ -1,50 +1,91 @@
+/* navigation-menu.component.css */
+.navigation {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
 .navigation ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .navigation li {
-    margin-left: 20px;
-    position: relative; /* For dropdown positioning */
-  }
-  
-  .navigation li:first-child {
-    margin-left: 0;
-  }
-  
-  .navigation a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
-    display: block;
-  }
-  
-  .navigation a.active {
-    font-weight: bold;
-  }
-  
-  /* Basic dropdown styling */
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    z-index: 100;
-  }
-  
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown-menu li {
-    margin: 0;
-  }
-  
-  .dropdown-menu a {
-    padding: 5px;
-  }
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navigation li {
+  margin: 0 15px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: block; /* Make the anchor fill the list item */
+  transition: background-color 0.3s ease-in-out;
+  font-size: 20px; /* Set font size to 20px for main links */
+}
+
+.navigation a:hover {
+  background-color: #dd3d3d;
+}
+
+.navigation a.active {
+  /* background-color: #555; */ /* Remove or comment out the active background */
+  /* You can add other styles for the active state if you want, e.g., */
+  /* font-weight: bold; */
+  /* text-decoration: underline; */
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  padding: 8px 15px; /* Ensure consistent padding */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: none; /* Initially hidden */
+  z-index: 10;
+  opacity: 0; /* For transition */
+  transform: translateY(-10px); /* For transition */
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Show dropdown on hover of the dropdown list item */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 15px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 20px; /* Set font size to 20px for dropdown links */
+}
+
+.dropdown-menu a:hover {
+  background-color: #dd3d3d;
+}

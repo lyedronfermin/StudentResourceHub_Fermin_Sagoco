@@ -1,9 +1,19 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { ApplicationConfig } from '@angular/core';
+import { provideRouter, Routes } from '@angular/router';
+import { ResourceListComponent } from './resource-list/resource-list.component';
+import { ResourceDetailsComponent } from './resource-details/resource-details.component';
+import { ResourceCategoryComponent } from './resource-category/resource-category.component';
+import { AddResourceFormComponent } from './add-resource-form/add-resource-form.component';
+// Import other components you want to route to
 
-import { routes } from './app.routes';
-import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
+const routes: Routes = [
+  { path: '', component: ResourceListComponent }, // Example: Home page
+  { path: 'categories/:category', component: ResourceCategoryComponent },
+  { path: 'resources/:id', component: ResourceDetailsComponent },
+  { path: 'add-resource', component: AddResourceFormComponent },
+  // Add other routes here, including for 'about' if you have an AboutComponent
+];
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(withEventReplay())]
+  providers: [provideRouter(routes)]
 };

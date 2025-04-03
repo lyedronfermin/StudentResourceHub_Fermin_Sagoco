@@ -1,12 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-navigation-menu',
+  standalone: true,
+  imports: [RouterModule, CommonModule],
   templateUrl: './navigation-menu.component.html',
-  styleUrls: ['./navigation-menu.component.css'],
+  styleUrls: ['./navigation-menu.component.css']
 })
-export class NavigationMenuComponent implements OnInit {
-  constructor() {}
+export class NavigationMenuComponent {
+  isCategoriesOpen = false;
 
-  ngOnInit(): void {}
+  toggleCategories() {
+    this.isCategoriesOpen = !this.isCategoriesOpen;
+  }
 }

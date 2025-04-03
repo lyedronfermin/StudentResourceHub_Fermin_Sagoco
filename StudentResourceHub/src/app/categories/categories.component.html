@@ -1,3 +1,22 @@
+
+<h2>Explore Resource Categories</h2>
+
+<div>
+  <label for="categoryInput">Enter a Category to Search:</label>
+  <input type="text" id="categoryInput" [(ngModel)]="categoryName" (ngModelChange)="updateCategoryName()">
+  <p>You entered: {{ categoryName }}</p>
+  <button (click)="processCategoryName()">Search Category</button>
+</div>
+
+<h3>Or Browse Existing Categories:</h3>
+<ul>
+  <li><a routerLink="/categories/programming">Programming</a></li>
+  <li><a routerLink="/categories/design">Design</a></li>
+  <li><a routerLink="/categories/math">Math</a></li>
+</ul>
+<router-outlet></router-outlet>
+
 <div class="category">
     <router-outlet></router-outlet>
   </div>
+

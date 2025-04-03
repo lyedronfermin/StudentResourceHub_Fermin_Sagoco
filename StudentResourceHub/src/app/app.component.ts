@@ -9,6 +9,8 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
+import { AboutComponent } from './about/about.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +24,8 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     FooterComponent,
     RouterModule,
+    AboutComponent,
+    CategoriesComponent,
 
   ],
   templateUrl: './app.component.html',
